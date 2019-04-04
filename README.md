@@ -65,6 +65,12 @@ docker-compose up -d --build
 npm run setup   # 初始化数据
 npm run build   # 编译静态文件
 npm run watch   # 本地调试模式
+
+npm config set user 0 
+npm config set unsafe-perm true
+cnpm run build
+ng server
+
 ```
 
 ## 备份还原
